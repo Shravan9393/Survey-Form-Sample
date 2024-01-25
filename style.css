@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(1, 20, 1, 0.925);
+    text-align: center;
+}
+  .header{
+    width: 100%;
+    text-align: center;
+    color: aqua;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-display:auto;
+    font-variant: small-caps;
+}
+     #form{
+        color: aqua;
+        font-size: 18px;
+        font-weight: 600;
+        background-color:transparent;
+        margin-top: 5rem;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 25%;
+        padding: 30px 20px;
+        box-shadow: 3px .3px 15px 8px rgba(115, 219, 10, 0.5);
+     }
+     .form-control{
+        flex-wrap: wrap;
+        text-align: left;
+        margin-bottom: 25px;
+        border-width: 2rem;
+        
+     }
+       .form-control label{
+        display: block;
+        margin-top: 10px;   
+       }
+
+    .form-control input,
+    .form-control select,
+    .form-control textarea{
+        border: 1px solid #12ffd4;
+        background-color: transparent;
+        color: rgb(62, 154, 236);
+        border-radius: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        margin-top: .4rem;
+        margin-left: 10px;
+        display: block;
+        width: auto;
+    }
+
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+        margin-left: 2rem;
+        justify-content: space-between;
+    }
+
+     .button {
+            background-color: #081b29;
+            color: aqua;
+            border: 1px solid #777777;
+            box-shadow:.1px .1px 2px 2px#05c46b;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 25%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+
+.button:hover {
+  color: #ba6709e6;
+}
