@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <section>
+      <header class="header">
+        <h1>This is the survey form</h1>
+      </header>
+    </section>
+    <!-- main section -->
+    <form id="form">
+      <!-- name section  -->
+      <div class="form-control">
+        <label for="name" id="label-name">
+          Name
+        </label>
+        <div>
+        <input
+          type="text"
+          class="name"
+          placeholder="Enter your first name"
+          required
+        />
+        </div>
+        <div>
+          <input
+            type="text"
+            class="name"
+            placeholder="Enter your Last name"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- email section -->
+
+      <div class="form-control">
+        <label for="Email" id="label-email"> Email</label>
+        <div>
+        <input
+          type="email"
+          id="Email"
+          placeholder="Enter your Email id"
+          required
+        />
+      </div>
+      </div>
+
+      <!-- age section -->
+
+      <div class="form-control">
+        <label for="Age">Age</label>
+        <div>
+        <select name="age" id="age">
+          <option value="">Select Age</option>
+        </div>
+          <!-- Use a loop to generate the options -->
+          <script>
+            for (var i = 18; i <= 50; i++) {
+              document.write('<option value="' + i + '">' + i + "</option>");
+            }
+          </script>
+        </select>
+      </div>
+
+      <!--  -->
+
+      <div class="form-control">
+        <div>
+        <label for="role" id="label-role">
+          Which option best describe you</label
+        >
+        </div>
+        <select name="role" id="role">
+          <option>Select role</option>
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="Professional">Professional</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label>Wolud you recomend the course to a friend</label>
+        <label for="recomend-1">
+          <input type="radio" id="recomend-1" name="recomend" />Yes
+        </label>
+        <label for="recomend-2">
+          <input type="radio" id="recomend-2" name="recomend" />No
+        </label>
+        <label for="recomend-3">
+          <input type="radio" id="recomend-3" name="recomend" />May Be
+        </label>
+      </div>
+
+      <div class="form-control">
+        <label>Language and frameWork Known (Check all that apply)</label>
+        <label for="inp-1">
+          <input type="checkbox" id="inp-1" name="inp" />C
+        </label>
+        <label for="inp-2">
+          <input type="checkbox" id="inp-2" name="inp" />C++
+        </label>
+        <label for="inp-3">
+          <input type="checkbox" id="inp-3" name="inp" />C#
+        </label>
+        <label for="inp-4">
+          <input type="checkbox" id="inp-4" name="inp" />Java
+        </label>
+        <label for="inp-5">
+          <input type="checkbox" id="inp-5" name="inp" />Python
+        </label>
+        <label for="inp-6">
+          <input type="checkbox" id="inp-6" name="inp" />HTML
+        </label>
+        <label for="inp-7">
+          <input type="checkbox" id="inp-7" name="inp" />CSS
+        </label>
+        <label for="inp-8">
+          <input type="checkbox" id="inp-8" name="inp" />JavaScritp
+        </label>
+        <label for="inp-9">
+          <input type="checkbox" id="inp-9" name="inp" />React
+        </label>
+        <label for="inp-10">
+          <input type="checkbox" id="inp-10" name="inp" />Angular
+        </label>
+      </div>
+      <div class="form-control">
+        <label for="comment"> Any Comment or suggestions </label>
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Enter your comment Here">
+        </textarea>
+      </div>
+      <button class="button"  type="submit" value="submit">Submit</button>
+    </form>
+    <!-- footer design -->
+    
+  </body>
+</html>
